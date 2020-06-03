@@ -59,7 +59,10 @@
         "<img class=\"active toppings-redPeppers\" src=\"images/pizza/red-peppers.svg\">",
         "<img class=\"active toppings-greenPeppers\" src=\"images/pizza/green-peppers.svg\">",
         "<img class=\"active toppings-mushrooms\" src=\"images/pizza/mushrooms.svg\">",
-        "<img class=\"active toppings-basil\" src=\"images/pizza/basil.svg\">"
+        "<img class=\"active toppings-basil\" src=\"images/pizza/basil.svg\">",
+        "<img class=\"active toppings-bacon\" src=\"images/pizza/bacon.svg\">",
+        "<img class=\"active toppings-corn\" src=\"images/pizza/corn.svg\">",
+        "<img class=\"active toppings-pineapple\" src=\"images/pizza/pineapple.svg\">"
       ],
       "params": {
         "sauce": {
@@ -109,6 +112,18 @@
             "salami": {
               "label": "Salami",
               "price": 3
+            },
+            "bacon": {
+              "label": "Bacon",
+              "price": 3
+            },
+            "corn": {
+              "label": "Corn",
+              "price": 2
+            },
+            "pineapple": {
+              "label": "Pineapple",
+              "price": 2
             }
           }
         },
@@ -158,7 +173,9 @@
         "<img class=\"active ingredients-feta\" src=\"images/salad/feta.svg\" style=\"z-index: 4;\">",
         "<img class=\"active ingredients-herbs\" src=\"images/salad/herbs.svg\" style=\"z-index: 5;\">",
         "<img class=\"active ingredients-cheese\" src=\"images/salad/cheese.svg\" style=\"z-index: 6;\">",
-        "<img class=\"active ingredients-pepper\" src=\"images/salad/black-pepper.svg\" style=\"z-index: 7;\">"
+        "<img class=\"active ingredients-pepper\" src=\"images/salad/black-pepper.svg\" style=\"z-index: 7;\">",
+        "<img class=\"active ingredients-corn\" src=\"images/salad/salad-corn.svg\">",
+        "<img class=\"active ingredients-pineapple\" src=\"images/salad/salad-pineapple.svg\">"
       ],
       "params": {
         "ingredients": {
@@ -196,6 +213,14 @@
             "pepper": {
               "label": "Black pepper",
               "price": 1
+            },
+            "corn": {
+              "label": "Corn",
+              "price": 1
+            },
+            "pineapple": {
+              "label": "Pineapple",
+              "price": 1
             }
           }
         }
@@ -206,7 +231,7 @@
   "event": [
     {
       "id": 1,
-      "date": "2019-01-01",
+      "date": "2020-01-22",
       "hour": "12:30",
       "table": 1,
       "repeat": false,
@@ -216,7 +241,7 @@
     },
     {
       "id": 2,
-      "date": "2019-01-01",
+      "date": "2020-01-21",
       "hour": "16:00",
       "table": 3,
       "repeat": "daily",
@@ -226,7 +251,7 @@
     },
     {
       "id": 3,
-      "date": "2019-01-01",
+      "date": "2020-01-21",
       "hour": "12:00",
       "table": 3,
       "repeat": "daily",
@@ -236,7 +261,7 @@
     },
     {
       "id": 4,
-      "date": "2019-01-01",
+      "date": "2020-01-21",
       "hour": "13:00",
       "table": 2,
       "repeat": "daily",
@@ -246,7 +271,7 @@
     },
     {
       "id": 5,
-      "date": "2019-01-01",
+      "date": "2020-01-21",
       "hour": "18:00",
       "table": 2,
       "repeat": "daily",
@@ -255,5 +280,43 @@
       "starters": ["lemonWater"]
     }
   ],
-  "booking": []
+  "booking": [],
+  "gallery": [
+    {
+      "id": 1,
+      "title": "image_1",
+      "alt": "image_1",
+      "source": "images/home/pizza-4.jpg"
+    },
+    {
+      "id": 2,
+      "title": "image_2",
+      "alt": "image_2",
+      "source": "images/home/pizza-5.jpg"
+    },
+    {
+      "id": 3,
+      "title": "image_3",
+      "alt": "image_3",
+      "source": "images/home/pizza-6.jpg"
+    },
+    {
+      "id": 4,
+      "title": "image_4",
+      "alt": "image_4",
+      "source": "images/home/pizza-7.jpg"
+    },
+    {
+      "id": 5,
+      "title": "image_5",
+      "alt": "image_5",
+      "source": "images/home/pizza-8.jpg"
+    },
+    {
+      "id": 6,
+      "title": "image_6",
+      "alt": "image_6",
+      "source": "images/home/pizza-9.jpg"
+    }
+  ]
 }
