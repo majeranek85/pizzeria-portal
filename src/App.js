@@ -27,7 +27,7 @@ function App() {
           <Route exact path={`${process.env.PUBLIC_URL}/tables/events/:id`} component={EventTable} />
           <Route exact path={`${process.env.PUBLIC_URL}/tables/events/new`} component={NewEventTable} />
           <Route exact path={`${process.env.PUBLIC_URL}/waiter`} component={Waiter} />
-          <Route exact path={`${process.env.PUBLIC_URL}/waiter/new`} component={NewOrder} />
+          <Route exact path={`${process.env.PUBLIC_URL}/waiter/order/new`} component={NewOrder} />
           <Route exact path={`${process.env.PUBLIC_URL}/waiter/order/:id`} component={Order} />
           <Route exact path={`${process.env.PUBLIC_URL}/kitchen`} component={Kitchen} />
         </Switch>
