@@ -16,7 +16,7 @@ import Kitchen from './components/views/Kitchen/Kitchen';
 
 function App() {
   return (
-    <BrowserRouter basename={'/panel'}>
+    <BrowserRouter>
       <MainLayout>
         <Switch>
           <Route exact path={`${process.env.PUBLIC_URL}/`} component={Dashboard} />
@@ -28,7 +28,7 @@ function App() {
           <Route exact path={`${process.env.PUBLIC_URL}/tables/events/new`} component={NewEventTable} />
           <Route exact path={`${process.env.PUBLIC_URL}/waiter`} component={Waiter} />
           <Route exact path={`${process.env.PUBLIC_URL}/waiter/new`} component={NewOrder} />
-          <Route exact path={`${process.env.PUBLIC_URL}/waiter/order`} component={Order} />
+          <Route exact path={`${process.env.PUBLIC_URL}/waiter/order/:id`} component={Order} />
           <Route exact path={`${process.env.PUBLIC_URL}/kitchen`} component={Kitchen} />
         </Switch>
       </MainLayout>
