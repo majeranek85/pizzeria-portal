@@ -8,7 +8,7 @@
 
 - `/login`
   - pola na login i hasło
-  - gusik do zalogowania (link do dashboardu)
+  - guzik do zalogowania (link do dashboardu)
 
 # Widok dostępności stolików
 
