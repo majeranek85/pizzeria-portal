@@ -46,41 +46,39 @@ class Tables extends React.Component {
     const {data, resources, grouping, groupByDate} = this.state;
 
     return (
-      <div className={styles.component}>
-        <h2>Tables view</h2>
+
+      <Paper className={styles.component}>
+        {/*<h2>Tables view</h2>
         <Link to={`${process.env.PUBLIC_URL}/tables/booking/123xyz`}>Booking details</Link>
         <Link to={`${process.env.PUBLIC_URL}/tables/booking/new`}>New booking</Link>
         <Link to={`${process.env.PUBLIC_URL}/tables/events/123abc`}>Event details</Link>
-        <Link to={`${process.env.PUBLIC_URL}/tables/events/new`}>New event</Link>
+        <Link to={`${process.env.PUBLIC_URL}/tables/events/new`}>New event</Link>*/}
+        <Scheduler
+          data={data}
+        >
+          <ViewState
+            defaultCurrentDate={'2020-07-09'}/>
+          <GroupingState
+            grouping={grouping}
+            groupByDate={groupByDate}
+          />
+          <DayView
+            startDayHour={12}
+            endDayHour={24}
+          />
+          <Toolbar />
+          <DateNavigator />
+          <TodayButton />
+          <Appointments />
+          <AppointmentTooltip />
+          <Resources
+            data={resources}
+          />
+          <IntegratedGrouping />
+          <GroupingPanel />
+        </Scheduler>
+      </Paper>
 
-        <Paper>
-          <Scheduler
-            data={data}
-          >
-            <ViewState
-              defaultCurrentDate={'2020-07-09'}/>
-            <GroupingState
-              grouping={grouping}
-              groupByDate={groupByDate}
-            />
-            <DayView
-              startDayHour={12}
-              endDayHour={24}
-            />
-            <Toolbar />
-            <DateNavigator />
-            <TodayButton />
-            <Appointments />
-            <AppointmentTooltip />
-            <Resources
-              data={resources}
-            />
-            <IntegratedGrouping />
-            <GroupingPanel />
-          </Scheduler>
-        </Paper>
-
-      </div>
     );
   }
 }
