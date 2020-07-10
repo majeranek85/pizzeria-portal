@@ -32,7 +32,7 @@ const Kitchen = () => (
       </TableHead>
       <TableBody>
         {demoContent.map(row => (
-          <TableRow key={row.id}>
+          <TableRow key={row.index}>
             <TableCell component="th" scope="row">
               {row.orderId}
             </TableCell>
