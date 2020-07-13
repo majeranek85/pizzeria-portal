@@ -12,6 +12,7 @@ const initialState = {
       active: false,
       error: false,
     },
+    tableNumber: null,
   },
 };
 

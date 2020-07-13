@@ -13,7 +13,7 @@ import EventTable from './components/views/EventTable/EventTable';
 import NewEventTable from './components/views/NewEventTable/NewEventTable';
 import Waiter from './components/views/Waiter/WaiterContainer';
 import Order from './components/views/Order/Order';
-import NewOrder from './components/views/NewOrder/NewOrder';
+import NewOrder from './components/views/NewOrder/NewOrderContainer';
 import Kitchen from './components/views/Kitchen/Kitchen';
 
 import { StylesProvider } from '@material-ui/core/styles';
